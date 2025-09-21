@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img id="header-img" src="https://static.vecteezy.com/system/resources/thumbnails/054/611/336/small_2x/wide-angle-foodgraphy-for-restaurant-with-copy-space-photo.jpg" alt="header-img">
+        <h1>Welcome to Gal´s Sportakus Restaurant</h1>
+        <h3>Your one-stop destination for delicious magic meals</h3>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><hr><br>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <figure>
+                    <img src="/HTML/Final Proyect/shrek.png" alt="spaghetti with shrek eyes" width="20%">
+                    <figcaption>Spaghetti with shrek eyes</figcaption>
+                </figure>
+                <br>
+                <h3>spaghetti with shrek eyes</h3>
+                <p>A delightful dish featuring spaghetti pasta topped with creamy sauce and meatballs that resemble Shrek's iconic eyes. A fun and tasty meal for all ages!</p>
+                <p><strong>Price:</strong> <em>$12.99</em></p>
+            </article>
+            <br><hr><br>
+            <article>
+                <figure>
+                    <img src="https://i.pinimg.com/736x/3c/62/fb/3c62fbcfafdf4784f692be5da8fa0a7f.jpg" alt="Enchanted forest salad" width="20%">
+                    <figcaption>Enchanted forest salad</figcaption>
+                </figure>
+                <br>
+                <h3>Enchanted forest salad</h3>
+                <p>A refreshing mix of greens, fruits, and nuts, dressed with a light vinaigrette. This salad is as magical as it is delicious, perfect for a healthy meal.</p>
+                <p><strong>Price:</strong> <em>$8.99</em></p>
+            </article>
+            <br><hr><br>
+            <article>
+                <figure>
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/d3/91/f9/our-signature-burger.jpg?w=900&h=500&s=1" alt="Tasty 7 kingdom Hamburger" width="20%">
+                    <figcaption>Tasty 7 kingdom Hamburger</figcaption>
+                </figure>
+                <br>
+                <h3>Tasty 7 kingdom Hamburger</h3>
+                <p>A juicy hamburger made with a blend of seven different meats, topped with fresh lettuce, tomato, cheese, and our special sauce. A royal treat for your taste buds!</p>
+                <p><strong>Price:</strong> <em>$14.99</em></p>
+            </article>
+            <br><hr><br>
+            <article>
+                <figure>
+                    <img src="https://d3s8tbcesxr4jm.cloudfront.net/recipe-images/v3/crispy-deep-fried-chicken-wings/4_medium.jpg" alt="Crispy fried dragon wings" width="20%">
+                    <figcaption>Crispy fried dragon wings</figcaption>
+                </figure>
+                <br>
+                <h3>Crispy fried dragon wings</h3>
+                <p>These wings are marinated in a special blend of spices and fried to perfection, giving them a crispy exterior and tender interior. Served with a side of our signature dipping sauce.</p>
+                <p><strong>Price:</strong> <em>$10.99</em></p>
+            </article>
+            <br><hr><br>
+        </section>
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form action="https://www.youtube.com/watch?v=p7YXXieghto" method="POST">
+                <fieldset>
+                    <legend>Spaghetti with shrek eyes</legend>
+                    <label for="spaghetti_quantity">Quantity:</label>
+                    <input type="number" id="spaghetti_quantity" name="spaghetti_quantity" min="0" max="10" value="0"><br><br>
+                    <label for="spaghetti_requests">Special Requests:</label><br>
+                    <textarea id="spaghetti_requests" name="spaghetti_requests" rows="4" cols="50"></textarea>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Enchanted forest salad</legend>
+                    <label for="salad_quantity">Quantity:</label>
+                    <input type="number" id="salad_quantity" name="salad_quantity" min="0" max="10" value="0"><br><br>
+                    <label>Dressing:</label><br>
+                    <input type="radio" id="vinaigrette" name="salad_dressing" value="vinaigrette" checked>
+                    <label for="vinaigrette">Vinaigrette</label><br>
+                    <input type="radio" id="ranch" name="salad_dressing" value="ranch">
+                    <label for="ranch">Ranch</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Tasty 7 kingdom Hamburger</legend>
+                    <label for="hamburger_quantity">Quantity:</label>
+                    <input type="number" id="hamburger_quantity" name="hamburger_quantity" min="0" max="10" value="0"><br><br>
+                    <label>Add-ons:</label><br>
+                    <input type="checkbox" id="extra_cheese" name="hamburger_addons" value="extra_cheese">
+                    <label for="extra_cheese">Extra Cheese</label><br>
+                    <input type="checkbox" id="bacon" name="hamburger_addons" value="bacon">
+                    <label for="bacon">Bacon</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Crispy fried dragon wings</legend>
+                    <label for="wings_quantity">Quantity:</label>
+                    <input type="number" id="wings_quantity" name="wings_quantity" min="0" max="10" value="0"><br><br>
+                    <label>Sauce:</label><br>
+                    <input type="radio" id="mild_sauce" name="wings_sauce" value="mild" checked>
+                    <label for="mild_sauce">Mild</label><br>
+                    <input type="radio" id="hot_sauce" name="wings_sauce" value="hot">
+                    <label for="hot_sauce">Hot</label>
+                </fieldset>
+                <br>
+                <input type="submit" value="Go To Checkout">
+            </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gal´s Sportakus Restaurant</p>
+    </footer>
+</body>
+</html>
